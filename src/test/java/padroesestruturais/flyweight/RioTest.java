@@ -29,12 +29,12 @@ class RioTest {
     @Test
     void deveRetornarTotalFlorestas() {
         Rio rio = new Rio();
-        rio.aumentarPopulacao("Jose", "Juiz de Fora", "MG");
-        rio.aumentarPopulacao("Maria", "Juiz de Fora", "MG");
-        rio.aumentarPopulacao("Ana", "Juiz de Fora", "MG");
-        rio.aumentarPopulacao("Joao", "Santos Dumont", "MG");
+        rio.aumentarPopulacao("Dourado", "Vale Do Jequitinhonha", "Mata Equatorial");
+        rio.aumentarPopulacao("Tilápia", "Mata do Kram beck", "Mata Atlântica");
+        rio.aumentarPopulacao("Bagre", "Jardim Botânico", "Cerrado");
+        rio.aumentarPopulacao("Cascao", "Mata do Mangabal", "Agreste");
 
-        assertEquals(2, FlorestaFactory.getTotalFlorestas());
+        assertEquals(4, FlorestaFactory.getTotalFlorestas());
     }
 
 }
